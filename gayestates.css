@@ -102,3 +102,9 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.white_bg 
+{
+    background-color: grey;
+    
+}
