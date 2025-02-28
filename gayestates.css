@@ -105,7 +105,14 @@
 
 .white_bg 
 {
-    background-color: #0B63B3;
-    font-size: large;
-    font-weight: medium;
+    background-color: #084A86;
+    
+    
 }
+
+.whitetext {
+  font-size: large;
+    font-weight: medium;
+    color: white
+}
+
