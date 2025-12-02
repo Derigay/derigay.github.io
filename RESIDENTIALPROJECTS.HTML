@@ -374,7 +374,7 @@ body, html {
       </div>
     </div>
   </div>
-  
+  </div>
 
 
 <!-- Footer -->
@@ -405,7 +405,7 @@ body, html {
       <a class="w3-button w3-large " href="https://www.instagram.com/gaycustomestates/#" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     </div>
     <p>Website By Pazey Coding</p>
-    <p>Copyright © 2024 Gay Custom Estates - All Rights Reserved.</p>
+    <p>Copyright © Gay Custom Estates - All Rights Reserved.</p>
 
   </footer>
  
@@ -425,18 +425,10 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
-
 </script>
 
 <script>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
@@ -455,6 +447,26 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
 <script>
   // Modal Image Gallery
   function onClick(element) {
@@ -481,9 +493,12 @@ function w3_close() {
       mySidebar.style.display = "none";
   }
   </script>
-
 </body>
 </html>
+
+
+
+
 
 
 
