@@ -92,7 +92,7 @@ body, html {
   </div>
   <br>
 <br>
-  <div class="w3-content w3-display-container" style="max-width:1200px" >
+  <div class="w3-content w3-display-container" style="max-width:1200px;max-height:800px;" >
     
     
   
@@ -276,31 +276,7 @@ body, html {
 </div>
 </div>
   
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
   
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
-
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1500px;margin-top:100px">
 
@@ -433,33 +409,25 @@ body, html {
   </footer>
  
 <script>
-  // Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
+function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
+
+</script>
+
+<script>
 
 // Modal Image Gallery
 function onClick(element) {
@@ -515,6 +483,7 @@ function w3_close() {
 
 </body>
 </html>
+
 
 
 
