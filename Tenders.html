@@ -142,13 +142,50 @@ The City is requesting quotations, including all labour, fuel, equipment and mat
                 
                                       
                                                    </tr>
-                                                 </table>         
+                                                 </table>     
+                                                 <b></b>    
                                                               </div>
                                                               </div>
-                                        
-                                              
-                                                      
-                                                              
+                                                         
+                                        <span class="white_bg"><button onclick="myAccFunc('Demo1')" class=" w3-theme w3-button w3-block w3-center"><br><a class="w3-button w3-large w3-blue-grey w3-left"><i class="fa fa-plus"></i></a></i><h7 class="whitetext">Alderville Senior's Residence Renovations<br><br>8465 County Rd 45, Roseneath, ON</h7></button></span>
+    <div id="Demo1" class="w3-hide">
+      <div class="w3-container" >
+        <br>
+        <p><b>Category:</b>General Contracting<br><br>
+            <b>Status:</b>Tenders<br><br>
+            <b>SQ Foot:</b> N/A  <br><br>
+            
+         	
+The Owner is seeking the services of qualified contractors to supply labour, materials and equipment to renovate Alderville Senior's Residence in Roseneath, ON
+
+<br>All questions and quotations shall be sent to derick@derigay.ca and CC: erin@derigay.ca
+
+<br>Deadline for submitting quotations is Wednesday April 8th at 12pm</p>
+        
+              <table class="w3-table w3-striped stack unstriped w3-bordered w3-container">
+              <thead>
+              <tr class="w3-theme">
+                <th>Date</th>
+                <th>Plan</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>2026/03/25</td>
+                <td>Specifications Book</td>
+                <td>Specifications Book</td>
+                <td>Specifications Book</td>
+                <td><a href="Alderville Senior's Residence - Specifications IFT.pdf">Download</td></a>
+              </tr>
+              <tr>
+                <td>2026/03/25</td>
+                <td>Drawings</td>
+                <td>Drawings</td>
+                <td>Drawings</td>
+                <td><a href="Alderville Senior's Residence - Drawings IFT.pdf">Download</td></a>
+              </tr>                                            
                                                               </div>
                                                               </div>
       
@@ -156,7 +193,7 @@ The City is requesting quotations, including all labour, fuel, equipment and mat
                 
                                     </div>
                           </div>
-  
+    
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -166,144 +203,3 @@ The City is requesting quotations, including all labour, fuel, equipment and mat
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-
-
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<!-- Footer -->
-<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-      <div class="w3-col s5">
-        <h4><i class="fa fa-fw fa-map-marker"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6 </h4>
-        <h4><i class="fa fa-fw fa-phone"></i> 705-243-4061</h4>
-        <h4><i class="fa fa-fw fa-envelope"></i> Info@gaycustomestates.com</h4>
-        
-       
-        </div>
-        <div>
-          
-          <h4>
-            <h4>Hours<br>
-              Monday - Saturday: 7am - 5pm<br>
-              
-              Sunday: Closed</h4>
-  
-        </div>
-  
-  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-    <h4>FOLLOW US</h4>
-    
-    <div class="w3-xlarge w3-section">
-      <a class="w3-button w3-large" href="https://www.facebook.com/gaycustomestates?mibextid=LQQJ4d" title="Facebook"><i class="fa fa-facebook w3-hover-opacity"></i></a>
-      <a class="w3-button w3-large " href="https://www.instagram.com/gaycustomestates/#" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    </div>
-    <p>Website By Pazey Coding</p>
-    <p>Copyright © 2024 Gay Custom Estates - All Rights Reserved.</p>
-
-  </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
-// Accordions
-function myAccFunc(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-
-</script>
-
-<style>
-  .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .accordion:after {
-  content: '\271A'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #084A86;
-  float: right;
-  margin-left: 5px;
-}
-
-
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  </style>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  }
-  </script>
-
-</body>
-</html>
