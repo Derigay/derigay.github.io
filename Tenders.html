@@ -185,7 +185,14 @@ The Owner is seeking the services of qualified contractors to supply labour, mat
                 <td>Drawings</td>
                 <td>Drawings</td>
                 <td><a href="Alderville Senior's Residence - Drawings IFT.pdf">Download</td></a>
-              </tr>                                            
+              </tr>     
+                     <tr>
+                <td>2026/03/27</td>
+                <td>Addendum 1</td>
+                <td>Documents</td>
+                <td>Addendum 1</td>
+                <td><a href="Alderville Senior's Residence - Addendum no.1.pdf">Download</td></a>
+              </tr>                                 
                                                               </div>
                                                               </div>
       
@@ -292,3 +299,144 @@ function w3_close() {
 
   </body>
   </html>
+
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Footer -->
+<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s5">
+        <h4><i class="fa fa-fw fa-map-marker"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6 </h4>
+        <h4><i class="fa fa-fw fa-phone"></i> 705-243-4061</h4>
+        <h4><i class="fa fa-fw fa-envelope"></i> Info@gaycustomestates.com</h4>
+        
+       
+        </div>
+        <div>
+          
+          <h4>
+            <h4>Hours<br>
+              Monday - Saturday: 7am - 5pm<br>
+              
+              Sunday: Closed</h4>
+  
+        </div>
+  
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <h4>FOLLOW US</h4>
+    
+    <div class="w3-xlarge w3-section">
+      <a class="w3-button w3-large" href="https://www.facebook.com/gaycustomestates?mibextid=LQQJ4d" title="Facebook"><i class="fa fa-facebook w3-hover-opacity"></i></a>
+      <a class="w3-button w3-large " href="https://www.instagram.com/gaycustomestates/#" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    </div>
+    <p>Website By Pazey Coding</p>
+    <p>Copyright © 2024 Gay Custom Estates - All Rights Reserved.</p>
+
+  </footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+
+</script>
+
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+  content: '\271A'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #084A86;
+  float: right;
+  margin-left: 5px;
+}
+
+
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+</html>
