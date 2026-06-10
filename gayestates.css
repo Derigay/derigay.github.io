@@ -125,3 +125,10 @@
   width:100%;
 opacity: 75%;}
 
+@media (max-width: 768px) {
+  .w3-display-left {
+    top: 15% !important;   /* move it up */
+    transform: none !important;
+  }
+}
+
