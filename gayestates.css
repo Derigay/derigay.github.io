@@ -132,3 +132,22 @@ opacity: 75%;}
   }
 }
 
+/* Hero headline */
+.hero-title,
+.elementor-heading-title {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-transform: none;
+
+    /* Makes text pop against image */
+    text-shadow:
+        0 2px 8px rgba(0,0,0,0.35),
+        0 6px 20px rgba(0,0,0,0.45);
+
+    max-width: 900px;
+}
+
+
