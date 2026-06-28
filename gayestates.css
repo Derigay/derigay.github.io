@@ -125,6 +125,13 @@
   width:100%;
 opacity: 75%;}
 
+hr {
+  height: 3px;          /* Increase for more thickness */
+  background-color: #084A86;
+  border: none;
+}
+
+
 @media (max-width: 768px) {
   .w3-display-left {
     top: 15% !important;   /* move it up */
