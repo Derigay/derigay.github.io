@@ -4,7 +4,6 @@
 <title>RESIDENTIAL PROJECTS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://derigay.ca">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DERIGAY">
@@ -25,7 +24,7 @@ body, html {
 /* Full height image header */
 .bgimg-1 {
   background-size: cover;
-  background-image: url("trynewhomepage.jpg");
+  background-image: url("mainpage.jpeg");
   min-height: 100%;
 }
 
@@ -34,42 +33,63 @@ body, html {
 }
 
 .w3-derigayblue {
-    background-color: #084A86;
+  background-color: #084A86;
+}
+
+/* Equalizes project rows on desktop */
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Forces fixed aspect ratio so all photos line up cleanly */
+.project-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Mobile Rule: Stack vertically with the picture ALWAYS on top */
+@media (max-width: 992px) {
+  .project-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-row .w3-col:has(img) {
+    order: -1;
+    width: 100%;
+  }
+  .project-row .w3-col {
+    width: 100%;
+  }
+  .project-img {
+    height: auto;
+    max-height: 300px;
+  }
 }
 </style>
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar2 w3-grey"  id="myNavbar">
-    <a href="HOMEPAGE.HTML"><img class="w3-bar-item w3-button w3-wide" style= "width:325px;height:175px;" src="New Logo.png" alt="HomePage"></a>
-    <!-- Right-sided navbar links -->
+  <div class="w3-bar2 w3-grey" id="myNavbar">
+    <a href="HOMEPAGE.HTML"><img class="w3-bar-item w3-button w3-wide" style="width:325px;height:175px;" src="New Logo.png" alt="HomePage"></a>
     <div class="w3-display-middle w3-hide-small">
       <a href="Aboutus.html" class="w3-bar-item w3-button"><STRONG>ABOUT</STRONG></a>
       <a href="services.html" class="w3-bar-item w3-button"><STRONG>SERVICES</STRONG></a>
       <a href="COMMERCIALPROJECTS.HTML" class="w3-bar-item w3-button"><STRONG>COMMERICAL PROJECTS</STRONG></a>
       <a href="RESIDENTIALPROJECTS.HTML" class="w3-bar-item w3-button"><STRONG>RESIDENTIAL PROJECTS</STRONG></a>
       <a href="partners.html" class="w3-bar-item w3-button"><STRONG>PARTNERSHIPS & ACHIEVEMENTS</STRONG></a>
-       <a href="contact.html" class="w3-bar-item w3-button"><STRONG>CONTACT</STRONG></a>
+      <a href="contact.html" class="w3-bar-item w3-button"><STRONG>CONTACT</STRONG></a>
       <a href="Tenders.html" class="w3-bar-item w3-button"><STRONG>TENDERS</STRONG></a>
-
-      
-      
-      
-    
-      
-   
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="Aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -79,318 +99,138 @@ body, html {
   <a href="partners.html" onclick="w3_close()" class="w3-bar-item w3-button">PARTNERSHIPS & ACHIEVEMENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   <a href="Tenders.html" onclick="w3_close()" class="w3-bar-item w3-button">TENDERS</a>
-
-  
-  
-  
-   
-  
 </nav>
-  <!-- !PAGE CONTENT! -->
+
 <div class="w3-content" style="max-width:1100px">
 
+  <br><br><br><br><br>
 
-
-    <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <!--Project 1-->
-  <div class="w3-row w3-padding-64">
+  <div class="w3-row w3-padding-64 project-row">
     <div class="w3-col l6 w3-padding-large">
-     
       <h2 class="w3-center">Bethany Custom Home</h2><br>
-      
       <p class="w3-large"> With over 4,500 square feet of finished living space, including a beautifully finished basement, this project showcases the highest level of craftsmanship, attention to detail, and quality materials.</p><br>
-
-      <p style="color: white;"><a href="Bethany Custom Home.pdf" class="w3-button white_bg w3-block">LEARN MORE</p></a>
-    
-   
+      <a href="Bethany Custom Home.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
     </div>
-    
     <div class="w3-col l6 w3-padding-large">
-      <img src="bethanycustomhomemain.jpg" class="w3-round w3-image" style="width:100%">
+      <img src="bethanycustomhomemain.jpg" class="w3-round w3-image project-img" alt="Bethany Custom Home">
     </div>
-    </div>
-    <hr>
-
-    <!--Project 2-->
- 
-    <div class="w3-row w3-padding-64">
-
-  <div class="w3-col l6 w3-padding-large">
-    <img src="sykesmain.JPG" class="w3-round w3-image" style="width:100%">
   </div>
-
-  <div class="w3-col l6 w3-padding-large">
-
-    <h2 class="w3-center">Sykes Custom Home</h2><br>
-
-    <p class="w3-large">
-    This home spans 2,800 square feet, with four spacious bedrooms, a home office, and a layout specifically designed to take full advantage of the unobstructed water views. 
-    </p><br>
-
-    <a href="Skyes Custom Home.pdf" class="w3-button white_bg w3-block" style="color:white;">
-      LEARN MORE
-    </a>
-
-  </div>
-
-</div>
-<hr>
-
-<!--Project 3-->
-
-<div class="w3-row w3-padding-64">
-
-  <div class="w3-col l6 w3-padding-large">
-
-    <h2 class="w3-center">Flemming Bay Custom Home</h2><br>
-
-    <p class="w3-large">
-      This home, spanning 2,700 square feet, is a true masterpiece designed to take full advantage of its waterfront location and provide the ultimate in comfort and style.
-    </p><br>
-
-    <a href="Flemming Bay Custom Home.pdf" class="w3-button white_bg w3-block" style="color:white;">
-      LEARN MORE
-    </a>
-
-  </div>
-
-  <div class="w3-col l6 w3-padding-large">
-    <img src="flemmingbaymain.JPG" class="w3-round w3-image" style="width:100%">
-  </div>
-
-</div>
-<hr>
-<!--Project 4--->
-
-    <div class="w3-row w3-padding-64">
-
-  <div class="w3-col l6 w3-padding-large">
-    <img src="oshawarenomain.JPG" class="w3-round w3-image" style="width:100%">
-  </div>
-
-  <div class="w3-col l6 w3-padding-large">
-
-    <h2 class="w3-center">Oshawa Renovation</h2><br>
-
-    <p class="w3-large">
-      This project was designed to enhance both the functionality and curb appeal of the home. The homeowners wanted a two-car garage that would integrate seamlessly with the existing architecture, along with a new front entry that would create a more welcoming and refined exterior.
-    </p><br>
-
-    <a href="Oshawa Renovation.pdf" class="w3-button white_bg w3-block" style="color:white;">
-      LEARN MORE
-    </a>
-
-  </div>
-    </div>
   <hr>
 
-
-        <!--Project 5-->
-  <div class="w3-row w3-padding-64">
+  <div class="w3-row w3-padding-64 project-row">
     <div class="w3-col l6 w3-padding-large">
-     
+      <img src="sykesmain.jpg" class="w3-round w3-image project-img" alt="Sykes Custom Home">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <h2 class="w3-center">Sykes Custom Home</h2><br>
+      <p class="w3-large">
+        This home spans 2,800 square feet, with four spacious bedrooms, a home office, and a layout specifically designed to take full advantage of the unobstructed water views. 
+      </p><br>
+      <a href="Skyes Custom Home.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-row w3-padding-64 project-row">
+    <div class="w3-col l6 w3-padding-large">
+      <h2 class="w3-center">Flemming Bay Custom Home</h2><br>
+      <p class="w3-large">
+        This home, spanning 2,700 square feet, is a true masterpiece designed to take full advantage of its waterfront location and provide the ultimate in comfort and style.
+      </p><br>
+      <a href="Flemming Bay Custom Home.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="flemmingbaymain.JPG" class="w3-round w3-image project-img" alt="Flemming Bay Custom Home">
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-row w3-padding-64 project-row">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="oshawarenomain.JPG" class="w3-round w3-image project-img" alt="Oshawa Renovation">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <h2 class="w3-center">Oshawa Renovation</h2><br>
+      <p class="w3-large">
+        This project was designed to enhance both the functionality and curb appeal of the home. The homeowners wanted a two-car garage that would integrate seamlessly with the existing architecture, along with a new front entry that would create a more welcoming and refined exterior.
+      </p><br>
+      <a href="Oshawa Renovation.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-row w3-padding-64 project-row">
+    <div class="w3-col l6 w3-padding-large">
       <h2 class="w3-center">Oak Orchard Custom Home</h2><br>
-      
-      <p class="w3-large"> We wanted to create a luxurious and spacious home that would offer comfort and elegance, with ample room for family and guests</p><br>
-
-      <p style="color: white;"><a href="Orchard lane home.pdf" class="w3-button white_bg w3-block">LEARN MORE</p></a>
-    
-   
+      <p class="w3-large"> We wanted to create a luxurious and spacious home that would offer comfort and elegance, with ample room for family and guests.</p><br>
+      <a href="Orchard lane home.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
     </div>
-    
     <div class="w3-col l6 w3-padding-large">
-      <img src="oakmain.JPG" class="w3-round w3-image" style="width:100%">
+      <img src="oakmain.jpg" class="w3-round w3-image project-img" alt="Oak Orchard Custom Home">
     </div>
-    </div>
-    <hr>
-
-    <!--Project 6-->
- 
-    <div class="w3-row w3-padding-64">
-
-  <div class="w3-col l6 w3-padding-large">
-    <img src="ashburnmain.JPG" class="w3-round w3-image" style="width:100%">
   </div>
+  <hr>
 
-  <div class="w3-col l6 w3-padding-large">
-
-    <h2 class="w3-center">Ashburn Renovation</h2><br>
-
-    <p class="w3-large">
-    The goal of this project was to add significant square footage to the home while enhancing both the aesthetic and functional aspects of the property.
-    </p><br>
-
-    <a href="Ashburn Renovations.pdf" class="w3-button white_bg w3-block" style="color:white;">
-      LEARN MORE
-    </a>
-
+  <div class="w3-row w3-padding-64 project-row">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="ashburnmain.jpg" class="w3-round w3-image project-img" alt="Ashburn Renovation">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <h2 class="w3-center">Ashburn Renovation</h2><br>
+      <p class="w3-large">
+        The goal of this project was to add significant square footage to the home while enhancing both the aesthetic and functional aspects of the property.
+      </p><br>
+      <a href="Ashburn Renovations.pdf" class="w3-button white_bg w3-block" style="color:white;">LEARN MORE</a>
+    </div>
   </div>
 
 </div>
 
-
-
-  
-
-</div>
-</div>
-
-
-<!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-    <h3 class="w3-center">LETS WORK TOGETHER</h3>
-    <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 705-243-4061</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>info@derigay.ca</p>
-      
-      <br>
-      <form action="mailto: info@derigay.ca" method="post" enctype="text/plain">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Phone" required name="Phone"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-      <!-- Image of location/map -->
-         
-         <div class="google-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.268730067793!2d-78.32474982334385!3d44.30442571006828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d58cec71ae40b9%3A0x5702f03711a08a5!2s207%20Simcoe%20St%2C%20Peterborough%2C%20ON%20K9H%202H6%2C%20Canada!5e0!3m2!1sen!2sus!4v1731519027684!5m2!1sen!2sus" width="1300" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
-      </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-<!-- Footer -->
-<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-      <div class="w3-col s5">
-        <h4><i class="fa fa-fw fa-map-marker"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6 </h4>
-        <h4><i class="fa fa-fw fa-phone"></i> 705-243-4061</h4>
-        <h4><i class="fa fa-fw fa-envelope"></i>info@derigay.ca</h4>
-        
-       
-        </div>
-        <div>
-          
-          <h4>
-            <h4>Hours<br>
-              Monday - Saturday: 7am - 5pm<br>
-              
-              Sunday: Closed</h4>
-  
-        </div>
-  
-  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-    <h4>FOLLOW US</h4>
+  <h3 class="w3-center">LETS WORK TOGETHER</h3>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 705-243-4061</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>info@derigay.ca</p>
     
-    <div class="w3-xlarge w3-section">
-      <a class="w3-button w3-large" href="https://www.facebook.com/gaycustomestates?mibextid=LQQJ4d" title="Facebook"><i class="fa fa-facebook w3-hover-opacity"></i></a>
-      <a class="w3-button w3-large " href="https://www.instagram.com/gaycustomestates/#" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <br>
+    <form action="mailto: info@derigay.ca" method="post" enctype="text/plain">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Phone" required name="Phone"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.268730067793!2d-78.32474982334385!3d44.30442571006828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d58cec71ae40b9%3A0x5702f03711a08a5!2s207%20Simcoe%20St%2C%20Peterborough%2C%20ON%20K9H%202H6%2C%20Canada!5e0!3m2!1sen!2sus!4v1731519027684!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <p>Website By Pazey Coding</p>
-    <p>Copyright © Gay Custom Estates - All Rights Reserved.</p>
+  </div>
+</div>
 
-  </footer>
- 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+  <div class="w3-row-padding">
+    <div class="w3-col s12 m6">
+      <h4><i class="fa fa-fw fa-map-marker"></i>207 Simcoe Street, Peterborough, Ontario K9H 2H6 </h4>
+      <h4><i class="fa fa-fw fa-phone"></i> 705-243-4061</h4>
+      <h4><i class="fa fa-fw fa-envelope"></i>info@derigay.ca</h4>
+    </div>
+    <div class="w3-col s12 m6">
+      <h4>Hours<br>
+        Monday - Saturday: 7am - 5pm<br>
+        Sunday: Closed
+      </h4>
+    </div>
+  </div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-</script>
-
-<script>
-
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-<script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
-
-<script>
-  // Modal Image Gallery
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
-  
-  
-  // Toggle between showing and hiding the sidebar when clicking the menu icon
-  var mySidebar = document.getElementById("mySidebar");
-  
-  function w3_open() {
-    if (mySidebar.style.display === 'block') {
-      mySidebar.style.display = 'none';
-    } else {
-      mySidebar.style.display = 'block';
-    }
-  }
-  
-  // Close the sidebar with the close button
-  function w3_close() {
-      mySidebar.style.display = "none";
-  }
-  </script>
-</body>
-</html>
-
+  <div class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <h4>FOLLOW US</h4>
+    <div class="w3-xlarge w3-section">
+      <a class="w3-button w3-large" href="https://www.facebook.com/gaycustomestates?mibextid=LQQJ4d" title="Facebook"><i class="fa fa-facebook w3-hover-
 
 
 
