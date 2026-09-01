@@ -157,4 +157,14 @@ hr {
     max-width: 900px;
 }
 
+/* Mobile Flexbox Reordering */
+@media (max-width: 992px) {
+  .w3-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .w3-row .w3-col:has(img) {
+    order: -1;
+  }
+}
 
