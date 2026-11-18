@@ -13,7 +13,58 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="gayestates.css">
+
+<style>
+  /* Award images: consistent display area, original proportions preserved */
+  .award-image {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: 520px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Smaller award-photo gallery */
+  .award-gallery-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Partner logos share a consistent visual height */
+  .partner-logo {
+    display: block;
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  @media (max-width: 600px) {
+    .award-image {
+      height: auto;
+      max-height: 420px;
+      margin-bottom: 16px;
+    }
+
+    .award-gallery-image {
+      height: 200px;
+    }
+
+    .partner-logo {
+      height: 110px;
+    }
+  }
+</style>
+
 
 
 <meta name="description" content="Explore the partnerships, industry memberships and award-winning achievements of Derigay Developments and Gay Custom Estates in Peterborough and the Kawarthas.">
@@ -112,7 +163,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar2 w3-grey"  id="myNavbar">
-    <a href="HOMEPAGE.HTML"><img class="w3-bar-item w3-button w3-wide" style= "width:325px;height:175px;" src="New Logo.png" alt="HomePage"></a>
+    <a href="HOMEPAGE.HTML"><img class="w3-bar-item w3-button w3-wide" style="width:325px;height:175px;" src="New Logo.png" alt="HomePage"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-display-middle w3-hide-small">
       <a href="Aboutus.html" class="w3-bar-item w3-button"><STRONG>ABOUT</STRONG></a>
@@ -164,9 +215,30 @@ body, html {
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px">
   <h1 class="w3-center"><b>Achievements</b></h1>
+
+    <h1 class="w3-center"><b>2026</b></h1>
+
+      <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-half">
+          <img class="award-image" src="derigay-2026-award.png" alt="2026 Multi-Residential Affordable Housing Project award">
+       
+        <h3>Multi-Residential (11 Units and Over) - Affordable Housing Project</h3>
+      
+        
+     
+    </div>
+    <div class="w3-half">
+      
+          <img class="award-image" src="derigay-2026-awards2.JPG" alt="2026 Gull River Minden Affordable Housing Project award">
+
+            <h3>Project of The Year - Gull River Minden Affordable Housing Project</h3>
+
+    </div>
+    </div>
+    <h1 class="w3-center"><b>2024</b></h1>
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-half">
-          <img src="HDA 2024 Winner.png" alt="Awards" style="width:350px; height: 600px;" >
+          <img class="award-image" src="HDA 2024 Winner.png" alt="2024 Builder of the Year Custom award">
        
         <h3>BUILDER OF THE YEAR - CUSTOM</h3>
         <p>Gay Custom Estates</p>
@@ -174,7 +246,7 @@ body, html {
     </div>
     <div class="w3-half">
       
-          <img src="Winner-Silver.png" alt="awards" style="width:350px; height: 600px;">
+          <img class="award-image" src="Winner-Silver.png" alt="2024 Custom Built Homes Silver award">
         
       <h3>CUSTOM BUILT HOMES 2501-4000 SQ. FT.</h3>
       <p>Oak Orchard Custom - Derigay Developments Ltd.</p>
@@ -183,18 +255,18 @@ body, html {
 
     <div class="w3-row-padding w3-padding-16 w3-center">
       <div class="w3-third">
-            <img src="award1.jpg" alt="Awards" style="width:100%">
+            <img class="award-gallery-image" src="award1.jpg" alt="Construction award">
    
       </div>
       <div class="w3-third">
         
-            <img src="award2.jpg" alt="awards" style="width:100%">
+            <img class="award-gallery-image" src="award2.jpg" alt="Construction award">
     
       </div>
 
       <div class="w3-third">
         
-        <img src="award3.jpg" alt="awards" style="width:100%; height:325px;">
+        <img class="award-gallery-image" src="award3.jpg" alt="Construction award">
 
   </div>
   </div>
@@ -210,7 +282,7 @@ body, html {
 
         <div class="w3-quarter">
           <a href="https://zenmech.ca/">
-              <img src="zenmech.png" alt="zenmech" style="width:100%">
+              <img class="partner-logo" src="zenmech.png" alt="zenmech">
             </a>
           <h3>ZENMECH</h3>
           <p>Plumbing and Heating Ltd</p>
@@ -218,14 +290,14 @@ body, html {
         </div>
         <div class="w3-quarter">
           <a href="https://scugoglumberrooftrussesontario.com/">
-              <img src="lakescugog.png" alt="lakescugog" style="width:100%">
+              <img class="partner-logo" src="lakescugog.png" alt="lakescugog">
             </a>
           <h3>LAKE SCUGOG</h3>
           <p>Lumber Inc.</p>
         </div>
         <div class="w3-quarter">
           <a href="https://vincenttheroncontracting.ca/">
-              <img src="vt3.png" alt="vt" style="width:100%">
+              <img class="partner-logo" src="vt3.png" alt="vt">
             </a>
           <h3>VINCENT THERON</h3>
           <p>Contracting Inc.</p>
@@ -233,7 +305,7 @@ body, html {
         </div>
         <div class="w3-quarter">
           <a href="https://www.homdesign.ca/">
-              <img src="hom.jpg" alt="hom" style="width:100%">
+              <img class="partner-logo" src="hom.jpg" alt="hom">
             </a>
           <h3>HOM</h3>
           <p>Drafting and Design</p>
@@ -241,7 +313,7 @@ body, html {
   
         <div class="w3-quarter">
           <a href="https://www.durhamconstructionassociation.com/welcome-to-the-durham-construction-association/">
-              <img src="DCA Logo.jpg" alt="DCA" style="width:100%">
+              <img class="partner-logo" src="DCA Logo.jpg" alt="DCA">
             </a>
           <h3>Durham Construction Association</h3>
           <p>MEMBER</p>
@@ -250,7 +322,7 @@ body, html {
   
    <div class="w3-quarter">
           <a href="https://drhba.com/">
-              <img src="DRHBA-Logo-with-1953-transparent-NEW.webp" alt="DRHBA" style="width:100%">
+              <img class="partner-logo" src="DRHBA-Logo-with-1953-transparent-NEW.webp" alt="DRHBA">
             </a>
           <h3>Durham Region Home Builders Association</h3>
           <p>MEMBER</p>
@@ -259,7 +331,7 @@ body, html {
   
         <div class="w3-quarter">
           <a href="https://www.ohba.ca/">
-              <img src="ohba-logo.png" alt="OHBA" style="width:100%">
+              <img class="partner-logo" src="ohba-logo.png" alt="OHBA">
             </a>
           <h3>Ontario Home Builders Association</h3>
           <p>MEMBER</p>
@@ -267,7 +339,7 @@ body, html {
   
         <div class="w3-quarter">
           <a href="https://www.peterboroughconstructionassociation.ca/">
-              <img src="PDCA-Logo.png" alt="OHBA" style="width:100%">
+              <img class="partner-logo" src="PDCA-Logo.png" alt="OHBA">
             </a>
           <h3>Peterborough + District Construction Association</h3>
           <p>MEMBER</p>
@@ -275,7 +347,7 @@ body, html {
         </div>
         <div class="w3-quarter">
           <a href="https://www.pkhba.com/">
-              <img src="pkhba-logo.jpg" alt="OHBA" style="width:100%">
+              <img class="partner-logo" src="pkhba-logo.jpg" alt="OHBA">
             </a>
           <h3>Peterborough & The Kawarthas Home Builders Association</h3>
           <p>MEMBER</p>
